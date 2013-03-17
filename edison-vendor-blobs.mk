@@ -11,8 +11,8 @@ $(VENDOR_BLOB_FOLDER)/bin/bridge_relay:/system/bin/bridge_relay \
 $(VENDOR_BLOB_FOLDER)/bin/btcmd:/system/bin/btcmd \
 $(VENDOR_BLOB_FOLDER)/bin/bthelp:/system/bin/bthelp \
 $(VENDOR_BLOB_FOLDER)/bin/bttest_mot:/system/bin/bttest_mot \
-$(VENDOR_BLOB_FOLDER)/bin/bugtogo.sh:/system/bin/bugtogo.sh \
 $(VENDOR_BLOB_FOLDER)/bin/charge_only_mode:/system/bin/charge_only_mode \
+$(VENDOR_BLOB_FOLDER)/bin/crda:/system/bin/crda \
 $(VENDOR_BLOB_FOLDER)/bin/dbvc_atvc_property_set:/system/bin/dbvc_atvc_property_set \
 $(VENDOR_BLOB_FOLDER)/bin/dumpe2fs:/system/bin/dumpe2fs \
 $(VENDOR_BLOB_FOLDER)/bin/dund:/system/bin/dund \
@@ -20,6 +20,8 @@ $(VENDOR_BLOB_FOLDER)/bin/ecckeyd:/system/bin/ecckeyd \
 $(VENDOR_BLOB_FOLDER)/bin/ee_driver:/system/bin/ee_driver \
 $(VENDOR_BLOB_FOLDER)/bin/enc_mgt_tool:/system/bin/enc_mgt_tool \
 $(VENDOR_BLOB_FOLDER)/bin/gps_driver:/system/bin/gps_driver \
+$(VENDOR_BLOB_FOLDER)/bin/JuniperVPNTools:/system/bin/JuniperVPNTools \
+$(VENDOR_BLOB_FOLDER)/bin/location:/system/bin/location \
 $(VENDOR_BLOB_FOLDER)/bin/mfa:/system/bin/mfa \
 $(VENDOR_BLOB_FOLDER)/bin/mfa_send:/system/bin/mfa_send \
 $(VENDOR_BLOB_FOLDER)/bin/mid:/system/bin/mid \
@@ -39,7 +41,7 @@ $(VENDOR_BLOB_FOLDER)/bin/timedexec:/system/bin/timedexec \
 $(VENDOR_BLOB_FOLDER)/bin/usbd:/system/bin/usbd \
 $(VENDOR_BLOB_FOLDER)/bin/whisperd:/system/bin/whisperd \
 $(VENDOR_BLOB_FOLDER)/bin/wifiupgradecal.sh:/system/bin/wifiupgradecal.sh \
-$(VENDOR_BLOB_FOLDER)/bin/vpnclientpm:/system/bin/vpnclientpm \
+$(VENDOR_BLOB_FOLDER)/bin/vpnclientpm:/system/bin/vpnclientpm
 
 # system/etc
 PRODUCT_COPY_FILES += \
@@ -59,7 +61,16 @@ $(VENDOR_BLOB_FOLDER)/etc/smc_android_cfg.ini:/system/etc/smc_android_cfg.ini \
 $(VENDOR_BLOB_FOLDER)/etc/smc_pa.ift:/system/etc/smc_pa.ift \
 $(VENDOR_BLOB_FOLDER)/etc/smc_pa_pk_4_8Mb_ipa.bin:/system/etc/smc_pa_pk_4_8Mb_ipa.bin \
 $(VENDOR_BLOB_FOLDER)/etc/smc_pa_pk_4_ipa.bin:/system/etc/smc_pa_pk_4_ipa.bin \
-$(VENDOR_BLOB_FOLDER)/etc/supportedlocales.conf:/system/etc/supportedlocales.conf \
+$(VENDOR_BLOB_FOLDER)/etc/supportedlocales.conf:/system/etc/supportedlocales.conf
+
+# system/etc/bluetooth
+PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/etc/bluetooth/audio.conf:/system/etc/bluetooth/audio.conf \
+$(VENDOR_BLOB_FOLDER)/etc/bluetooth/auto_pairing.conf:/system/etc/bluetooth/auto_pairing.conf \
+$(VENDOR_BLOB_FOLDER)/etc/bluetooth/blacklist.conf:/system/etc/bluetooth/blacklist.conf \
+$(VENDOR_BLOB_FOLDER)/etc/bluetooth/input.conf:/system/etc/bluetooth/input.conf \
+$(VENDOR_BLOB_FOLDER)/etc/bluetooth/main.conf:/system/etc/bluetooth/main.conf \
+$(VENDOR_BLOB_FOLDER)/etc/bluetooth/network.conf:/system/etc/bluetooth/network.conf
 
 # system/etc/gps
 PRODUCT_COPY_FILES += \
@@ -68,17 +79,18 @@ $(VENDOR_BLOB_FOLDER)/etc/gps/RxN/MSLConfig.txt:/system/etc/gps/RxN/MSLConfig.tx
 $(VENDOR_BLOB_FOLDER)/etc/gps/RxN/security.key:/system/etc/gps/RxN/security.key \
 $(VENDOR_BLOB_FOLDER)/etc/gps/ti/GPSCConfigFile.cfg:/system/etc/gps/ti/GPSCConfigFile.cfg \
 $(VENDOR_BLOB_FOLDER)/etc/gps/ti/patch-X.0.ce:/system/etc/gps/ti/patch-X.0.ce \
-$(VENDOR_BLOB_FOLDER)/etc/gps/ti/pathconfigfile.txt:/system/etc/gps/ti/pathconfigfile.txt \
+$(VENDOR_BLOB_FOLDER)/etc/gps/ti/pathconfigfile.txt:/system/etc/gps/ti/pathconfigfile.txt
 
 # system/etc/(others)
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/etc/firmware/ap_bt_data.bin:/system/etc/firmware/ap_bt_data.bin \
+$(VENDOR_BLOB_FOLDER)/etc/firmware/TIInit_10.6.15.bts:/system/etc/firmware/TIInit_10.6.15.bts \
 $(VENDOR_BLOB_FOLDER)/etc/nuance/vsuite_config.xml:/system/etc/nuance/vsuite_config.xml \
 $(VENDOR_BLOB_FOLDER)/etc/security/suplcerts.bks:system/etc/security/suplcerts.bks \
 $(VENDOR_BLOB_FOLDER)/etc/updatecmds/google_generic_update.txt:/system/etc/updatecmds/google_generic_update.txt \
 $(VENDOR_BLOB_FOLDER)/etc/VideoEditorLite/mve.ini:/system/etc/VideoEditorLite/mve.ini \
 $(VENDOR_BLOB_FOLDER)/etc/vsensor.d/MeaningFulLocation.vsensor:/system/etc/vsensor.d/MeaningFulLocation.vsensor \
-$(VENDOR_BLOB_FOLDER)/etc/wifi/wlan_fem.ini:/system/etc/wifi/wlan_fem.ini \
+$(VENDOR_BLOB_FOLDER)/etc/wifi/wlan_fem.ini:/system/etc/wifi/wlan_fem.ini
 
 # system/usr
 PRODUCT_COPY_FILES += \
@@ -103,7 +115,7 @@ $(VENDOR_BLOB_FOLDER)/usr/share/alsa/pcm/surround40.conf:system/usr/share/alsa/p
 $(VENDOR_BLOB_FOLDER)/usr/share/alsa/pcm/surround41.conf:system/usr/share/alsa/pcm/surround41.conf \
 $(VENDOR_BLOB_FOLDER)/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
 $(VENDOR_BLOB_FOLDER)/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
-$(VENDOR_BLOB_FOLDER)/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
+$(VENDOR_BLOB_FOLDER)/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf
 
 # system/lib
 PRODUCT_COPY_FILES += \
@@ -160,6 +172,7 @@ $(VENDOR_BLOB_FOLDER)/lib/libmss.so:/system/lib/libmss.so \
 $(VENDOR_BLOB_FOLDER)/lib/libmss.so.sig:/system/lib/libmss.so.sig \
 $(VENDOR_BLOB_FOLDER)/lib/libnative_renderer.so:/system/lib/libnative_renderer.so \
 $(VENDOR_BLOB_FOLDER)/lib/libnativedrm1.so:/system/lib/libnativedrm1.so \
+$(VENDOR_BLOB_FOLDER)/lib/libOMX.ITTIAM.AAC.encode.so:/system/lib/libOMX.ITTIAM.AAC.encode.so \
 $(VENDOR_BLOB_FOLDER)/lib/libpanorama.so:/system/lib/libpanorama.so \
 $(VENDOR_BLOB_FOLDER)/lib/libpanorama_jni.so:/system/lib/libpanorama_jni.so \
 $(VENDOR_BLOB_FOLDER)/lib/libPhotoEditor.so:/system/lib/libPhotoEditor.so \
@@ -187,7 +200,7 @@ $(VENDOR_BLOB_FOLDER)/lib/libxmpcore.so:/system/lib/libxmpcore.so \
 $(VENDOR_BLOB_FOLDER)/lib/libWifiAPHardware.so:/system/lib/libWifiAPHardware.so \
 $(VENDOR_BLOB_FOLDER)/lib/libportaljni.so:/system/lib/libportaljni.so \
 $(VENDOR_BLOB_FOLDER)/lib/libusb.so:/system/lib/libusb.so \
-$(VENDOR_BLOB_FOLDER)/lib/drm/libmotdrmplugin.so:/system/lib/drm/libmotdrmplugin.so \
+$(VENDOR_BLOB_FOLDER)/lib/drm/libmotdrmplugin.so:/system/lib/drm/libmotdrmplugin.so
 
 # RIL files
 PRODUCT_COPY_FILES += \
@@ -195,22 +208,27 @@ $(VENDOR_BLOB_FOLDER)/bin/gkisystem:/system/bin/gkisystem \
 $(VENDOR_BLOB_FOLDER)/lib/libbabysit.so:/system/lib/libbabysit.so \
 $(VENDOR_BLOB_FOLDER)/lib/libgki.so:/system/lib/libgki.so \
 $(VENDOR_BLOB_FOLDER)/lib/libmot_atcmd.so:/system/lib/libmot_atcmd.so \
+$(VENDOR_BLOB_FOLDER)/lib/libpppd_plugin-ril.so:/system/lib/libpppd_plugin-ril.so \
 $(VENDOR_BLOB_FOLDER)/lib/libu300-parser.so:/system/lib/libu300-parser.so \
-$(VENDOR_BLOB_FOLDER)/lib/libu300-ril.so:/system/lib/libu300-ril.so \
+$(VENDOR_BLOB_FOLDER)/lib/libu300-ril.so:/system/lib/libu300-ril.so
+
+# system/lib/crda
+PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/lib/crda/regulatory.bin:/system/lib/crda/regulatory.bin
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/lib/hw/gps.edison.so:/system/lib/hw/gps.edison.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/lights.edison.so:/system/lib/hw/lights.edison.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/sensors.edison.so:/system/lib/hw/sensors.edison.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/sensors.edison.so:/system/lib/hw/sensors.edison.so
 
 # system/vendor
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/vendor/lib/drm/libdrmwvmplugin.so:/system/vendor/lib/drm/libdrmwvmplugin.so \
 $(VENDOR_BLOB_FOLDER)/vendor/lib/libwvm.so:/system/vendor/lib/libwvm.so \
 $(VENDOR_BLOB_FOLDER)/vendor/lib/libwvdrm_L3.so:/system/vendor/lib/libwvdrm_L3.so \
-$(VENDOR_BLOB_FOLDER)/vendor/lib/libWVStreamControlAPI_L3.so:/system/vendor/lib/libWVStreamControlAPI_L3.so \
+$(VENDOR_BLOB_FOLDER)/vendor/lib/libWVStreamControlAPI_L3.so:/system/vendor/lib/libWVStreamControlAPI_L3.so
 
 # system/xbin
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/xbin/drm1_func_test:/system/xbin/drm1_func_test \
+$(VENDOR_BLOB_FOLDER)/xbin/drm1_func_test:/system/xbin/drm1_func_test

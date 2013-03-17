@@ -17,4 +17,3 @@
 
 $(call inherit-product, vendor/motorola/edison/edison-vendor-blobs.mk)
 $(call inherit-product, vendor/motorola/omap4-common/common-vendor.mk)
-
