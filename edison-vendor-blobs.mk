@@ -219,8 +219,8 @@ $(VENDOR_BLOB_FOLDER)/lib/crda/regulatory.bin:/system/lib/crda/regulatory.bin
 # system/lib/hw
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/lib/hw/gps.edison.so:/system/lib/hw/gps.edison.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/lights.edison.so:/system/lib/hw/lights.edison.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/sensors.edison.so:/system/lib/hw/sensors.edison.so
+#$(VENDOR_BLOB_FOLDER)/lib/hw/lights.edison.so:/system/lib/hw/lights.edison.so
 
 # system/vendor
 PRODUCT_COPY_FILES += \
