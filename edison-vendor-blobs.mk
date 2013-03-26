@@ -144,9 +144,6 @@ $(VENDOR_BLOB_FOLDER)/lib/libevbridge.so:/system/lib/libevbridge.so \
 $(VENDOR_BLOB_FOLDER)/lib/libexempi.so:/system/lib/libexempi.so \
 $(VENDOR_BLOB_FOLDER)/lib/libextdispjni.so:/system/lib/libextdispjni.so \
 $(VENDOR_BLOB_FOLDER)/lib/libfmchr.so:/system/lib/libfmchr.so \
-$(VENDOR_BLOB_FOLDER)/lib/libfmradio_jni.so:/system/lib/libfmradio_jni.so \
-$(VENDOR_BLOB_FOLDER)/lib/libfmradioplayer.so:/system/lib/libfmradioplayer.so \
-$(VENDOR_BLOB_FOLDER)/lib/libFMRadio.so:/system/lib/libFMRadio.so \
 $(VENDOR_BLOB_FOLDER)/lib/libfm_stack.so:/system/lib/libfm_stack.so \
 $(VENDOR_BLOB_FOLDER)/lib/libgpsTI.so:/system/lib/libgpsTI.so \
 $(VENDOR_BLOB_FOLDER)/lib/libhdcp.so:/system/lib/libhdcp.so \
